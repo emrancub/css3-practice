@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Query</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+        .food{
+            border: 3px solid lightsalmon;
+            margin: 10px;
+            border-radius: 30px;
+            width: 350px;
+        }
+        .food img{
+            width: 100%;
+            border-radius: 30px;
+        }
+        @media(max-width:760px){
+            .container{
+                flex-direction: column;
+            }
+            .container .food{
+                background-color: magenta;
+            }
+        }
+        @media(min-width: 1200px){
+            .container .food{
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe qui animi laudantium, dolorem ullam aliquam explicabo quaerat adipisci impedit necessitatibus facilis dicta voluptatum repellendus ab nesciunt incidunt quod vel, tenetur quos. Perferendis iusto quod natus quidem necessitatibus quas nisi quaerat? Distinctio assumenda repellat explicabo soluta ab quas neque tenetur? Dolore.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Laborum, exercitationem. Quibusdam pariatur nam, harum nemo itaque, quidem est similique adipisci officia esse eius possimus reprehenderit aliquam expedita eveniet, tempora iusto. Quam tenetur ullam tempora eveniet delectus minus natus ex, eius facilis vitae voluptatem expedita ratione eos provident neque, accusantium ea! Et perferendis labore recusandae voluptates expedita quasi est.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Amet, deserunt. Soluta voluptatem reiciendis reprehenderit officia optio? Quasi aspernatur, dolorem dolore esse nihil delectus impedit. Ipsum consequuntur officiis nesciunt sequi, quaerat impedit tenetur debitis alias quia voluptates est dolorem, sit perspiciatis doloremque ratione delectus doloribus culpa, possimus blanditiis expedita obcaecati soluta natus harum assumenda. Quos accusantium nobis quo ex?</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Rem dolore perferendis, reiciendis atque consequuntur ut hic ipsum unde perspiciatis, quidem dolor, magnam quo eveniet quae cum consectetur provident iste cupiditate modi! Voluptatibus molestias, neque voluptas rerum itaque quo magnam sit atque perferendis, natus ipsam quisquam quod inventore. Sequi distinctio dolorem explicabo voluptatem facere? Itaque nostrum rerum molestiae cumque.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Sapiente qui explicabo, labore nam molestias distinctio. Ut odio quos magnam molestiae impedit ad architecto veritatis, deserunt laudantium ullam alias quidem illo, eos provident voluptatum? Rerum ratione repellendus rem non doloribus nulla a omnis, vitae, alias voluptates voluptatem soluta quidem, voluptatibus expedita natus fugiat delectus ex est hic porro quam.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpg" alt="">
+            <p>Ratione similique quas laborum, impedit soluta alias consectetur maxime ad? Impedit consequatur hic sunt itaque inventore eum, sequi minima odio blanditiis perspiciatis omnis distinctio, beatae nulla. Consequatur mollitia a non, assumenda repellendus temporibus voluptatum inventore exercitationem impedit delectus. Ducimus deserunt alias nostrum facere consequatur consequuntur. Dolorem molestiae odit excepturi nemo!</p>
+        </div>
+    </div>
+</body>
+</html>
